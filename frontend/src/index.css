@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F8FAFB] text-gray-900 font-sans antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Buttons */
+  .btn-primary {
+    @apply bg-[#14B8A6] hover:bg-[#0D9488] text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-all duration-200 border border-gray-300 hover:border-gray-400 active:scale-95;
+  }
+
+  .btn-outline {
+    @apply bg-transparent hover:bg-[#14B8A6]/10 text-[#14B8A6] font-semibold py-3 px-6 rounded-lg transition-all duration-200 border-2 border-[#14B8A6] hover:border-[#0D9488] active:scale-95;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent hover:bg-gray-100 text-gray-900 font-medium py-2 px-4 rounded-lg transition-colors;
+  }
+
+  .btn-sm {
+    @apply py-2 px-4 text-sm;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white rounded-xl p-6 border border-gray-200 shadow-sm transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-md hover:-translate-y-0.5;
+  }
+
+  /* Inputs */
+  .input {
+    @apply bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 placeholder-gray-500 focus:outline-none focus:border-[#14B8A6] focus:ring-2 focus:ring-[#14B8A6]/20 transition-all;
+  }
+
+  .input-error {
+    @apply border-red-500 focus:border-red-500 focus:ring-red-500/20;
+  }
+
+  .textarea {
+    @apply input min-h-[120px] resize-y;
+  }
+
+  .select {
+    @apply input cursor-pointer;
+  }
+
+  /* Labels */
+  .label {
+    @apply block text-sm font-semibold text-gray-900 mb-2;
+  }
+
+  .label-required::after {
+    @apply text-red-500 ml-1;
+    content: '*';
+  }
+
+  /* Container */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Badges */
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  .badge-primary {
+    @apply badge bg-[#14B8A6]/10 text-[#0D9488] border border-[#14B8A6]/30;
+  }
+
+  .badge-success {
+    @apply badge bg-green-100 text-green-800 border border-green-200;
+  }
+
+  .badge-warning {
+    @apply badge bg-yellow-100 text-yellow-800 border border-yellow-200;
+  }
+
+  /* Loading Spinner */
+  .spinner {
+    @apply animate-spin rounded-full border-2 border-gray-300 border-t-[#14B8A6];
+  }
+
+  /* Divider */
+  .divider {
+    @apply border-t border-gray-200 my-6;
+  }
+}
+
+/* Wallet Adapter Overrides */
+.wallet-adapter-button {
+  @apply bg-[#14B8A6] hover:bg-[#0D9488] !important;
+}
+
+.wallet-adapter-modal-wrapper {
+  @apply bg-white border border-gray-200 !important;
+}
