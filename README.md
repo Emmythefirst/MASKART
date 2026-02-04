@@ -422,12 +422,6 @@ By leveraging Solana's speed and low costs, IPFS's decentralization, and advance
 
 ---
 
-## 👥 Team
-
-- **Your Name** - Full Stack Developer - [@yourhandle](https://twitter.com/yourhandle)
-
----
-
 ## 🙏 Acknowledgments
 
 - Solana Foundation for blockchain infrastructure
@@ -435,15 +429,6 @@ By leveraging Solana's speed and low costs, IPFS's decentralization, and advance
 - Starpay for anonymous virtual card services
 - IPFS/Pinata for decentralized storage
 - The open-source community
-
----
-
-## 📧 Contact
-
-For questions, feedback, or partnerships:
-- Email: hello@maskart.io
-- Twitter: [@MasKart](https://twitter.com/maskart)
-- Discord: [Join Server](https://discord.gg/maskart)
 
 ---
 
